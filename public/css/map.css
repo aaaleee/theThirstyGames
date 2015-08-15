@@ -1,0 +1,26 @@
+#map {
+  margin-top:50px;
+  float:center;
+  position:absolute;
+  width: 98%;
+  height: 95%;
+}
+#updates {
+ float: right;
+ width: 20%;
+ height: 590px;
+}
+#updatesHeader {
+ align: center;
+}
+.markerData {
+ color: #0F0F0F;
+}
+.updateCell {
+ border: 2px solid #F0FBFF;
+ padding: 4px;
+ margin: 4px;
+}
+.infoWindow {
+  color: #0F0F0F;
+}
