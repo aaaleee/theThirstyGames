@@ -33,6 +33,11 @@ app.get('/meterReading', function(req, res) {
     servePage(req,res);
 });
 
+app.get('/updateProfile', function(req, res) {
+    req.body.file = "updateProfile.html";
+    servePage(req,res);
+});
+
 app.get('/main', function(req,res) {
 	    var fragments = {};
 

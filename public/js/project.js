@@ -65,11 +65,14 @@ function showMeterModal() {
 			}
 		});
 	});
-  		$("#add-bin").modal("show");
+  		$("#add-reading").modal("show");
 	});
 }
 
-function showUpdateBinModal() {
+function showUpdateProfileModal() {
+	$("#modal-container").load("/updateProfile", function() {
+		$("#update-profile").modal("show");
+	});
 	
 }
 

@@ -1,4 +1,4 @@
-<div aria-hidden="true" class="modal fade" id="add-reading" role="dialog" tabindex="-1">
+<div aria-hidden="true" class="modal fade" id="update-profile" role="dialog" tabindex="-1">
 	<div class="modal-dialog modal-xs">
 		<div class="modal-content">
 			<div class="modal-heading">
@@ -11,7 +11,35 @@
 					<table class="settings-modal">
 						<tr>
 							<td class="settings-modal-label">
-								<span>: </span>
+								<span>Name: </span>
+							</td>
+							<td class="settings-modal-value">
+								<input type="text" size="12" name="reading" value="" id="name"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Household members: </span>
+							</td>
+							<td class="settings-modal-value">
+								<select class="form-control" id="float-select">
+										<option value="">&nbsp;</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="9_plus">9+</option>
+									</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Residence type: </span>
 							</td>
 							<td class="settings-modal-value">
 								<input type="text" size="12" name="reading" value="" id="reading"/>
@@ -19,13 +47,64 @@
 						</tr>
 						<tr>
 							<td class="settings-modal-label">
-								<span>Date: </span>
+								<span>Bathrooms: </span>
 							</td>
 							<td class="settings-modal-value">
-							<input class="datepicker-adv datepicker-adv-default form-control" id="datepicker-adv-2" type="text" value="8/16/2015" name="readingDate" id="readingDate">
+								<select class="form-control" id="float-select">
+										<option value="">&nbsp;</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="5_plus">5+</option>
+									</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Washing machine: </span>
+							</td>
+							<td class="settings-modal-value">
+								<div class="checkbox switch">
+								<label for="input-switch-4">
+									<input class="access-hide" id="input-switch-4" name="input-switch" type="checkbox"><span class="switch-toggle switch-toggle-green"></span>
+								</label>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Garden: </span>
+							</td>
+							<td class="settings-modal-value">
+								<div class="checkbox switch">
+								<label for="input-switch-4">
+									<input class="access-hide" id="input-switch-4" name="input-switch" type="checkbox"><span class="switch-toggle switch-toggle-green"></span>
+								</label>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Pool: </span>
+							</td>
+							<td class="settings-modal-value">
+								<div class="checkbox switch">
+								<label for="input-switch-4">
+									<input class="access-hide" id="input-switch-4" name="input-switch" type="checkbox"><span class="switch-toggle switch-toggle-green"></span><!--Green switch-->
+								</label>
+							</div>
 							</td>
 						</tr>
 					</table>
+					<!-- 
+					Family size: 4
+					Number of bathrooms: 2
+					Residence type: Apartment
+					Washing machine: Yes
+					Garden: No
+					Pool: No -->
 				</form>
 			</div>
 			<div class="modal-footer">

@@ -29,8 +29,12 @@ function renderMyStats(userId) {
 	            data: [1750,1750,1750,1750,1750,1750,1750,1750]
 	        },
 			{
-	            name: 'Average',
+	            name: 'District Average',
 	            data: [1800,1700,1650,1700,1800,1800,1900,1900]
+	        },
+	        {
+	            name: 'City Average',
+	            data: [1900,1750,1680,1760,1800,1800,1800,1850]
 	        }
 	        ]
      	});

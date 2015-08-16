@@ -22,7 +22,7 @@ var navigation = {
 		},
 		{
 			label: "Update My Profile",
-			action: "updateProfileModal",
+			action: "showUpdateProfileModal",
 		}
 	]
 };

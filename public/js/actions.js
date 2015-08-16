@@ -1,7 +1,7 @@
 var actions = {
 	main: [{
 		label: "My Stats",
-		link: "/myStats",
+		action: "showMyStats",
 		iconClass: "icon",
 		iconHTML: "",
 
@@ -22,7 +22,7 @@ var actions = {
 		},
 		{
 			label: "Update My Profile",
-			action: "updateProfileModal",
+			action: "showUpdateProfileModal",
 			iconClass: "icon",
 			iconHTML: "settings",
 		}
