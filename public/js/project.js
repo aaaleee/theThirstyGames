@@ -21,8 +21,9 @@ function showMeterModal() {
 
 		$("#saveMeterReadingButton").click(function() {	
 			$("#add-reading").modal("hide");
-			showAchievement('Check please!','Congrats!<br>You just submitted your first reading!<br><span class="content-sub-heading">+100xp</span>');
-
+			setTimeout(function() {
+				showAchievement('Check please!','Congrats!<br>You just submitted your first reading!<br><br><span class="content-sub-heading" style="text-align:center;">+100xp</span>');
+			},1000);
 		});
 			
 		$('.datepicker-adv-default').each(function(index) {
