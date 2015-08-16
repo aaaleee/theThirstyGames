@@ -8,16 +8,9 @@
 
 	<!-- css -->
 	<link href="../css/base.css" rel="stylesheet">
-	<link href="../css/map.css" rel="stylesheet">
+	<!--<link href="../css/map.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css">
 
-	<!-- favicon -->
-	<!-- ... -->
-
-	<!-- ie -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 </head>
 <body class="avoid-fout page-blue">
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
@@ -72,7 +65,76 @@
 	<div class="content">
 		<div class="container">
 			<div class="row">
-				<div id="map"></div>
+				<div id="map">
+					<div style="padding-top:40px;"><span>&nbsp;</span></div>
+					<div id="map-container"></div>
+					<div id="rankings">
+						<div class="table-responsive">
+			<table class="table" title="Rankings">
+				<thead>
+					<tr>
+						<th>District rankings</th>
+						<th>Position</th>
+						<th>Total gallons used</th>
+						<th>Population</th>
+						<th>Gallons used per capita</th>
+						<th>Average spending</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><div class="pull-left tile-side">
+							<div class="avatar avatar-yellow avatar-sm">
+								<span class="icon">♚</span>
+							</div>
+						</div>
+						<div class="tile-inner">
+							<span><strong>Sunset</strong></span>
+						</div>
+						</td>
+						<td><div class="tile-inner">1st</div></td>
+						<td><div class="tile-inner">1209209292</div></td>
+						<td><div class="tile-inner">300,000</div></td>
+						<td><div class="tile-inner">2000</div></td>
+						<td><div class="tile-inner">$800</div></td>
+					</tr>
+					<tr>
+						<td><div class="pull-left tile-side">
+							<div class="avatar avatar-blue avatar-sm">
+								<span class="icon">♞</span>
+							</div>
+						</div>
+						<div class="tile-inner">
+							<span><strong>Richmond</strong></span>
+						</div></td>
+						<td><div class="tile-inner">2nd</div></td>
+						<td><div class="tile-inner">1309204212</div></td>
+						<td><div class="tile-inner">250,000</div></td>
+						<td><div class="tile-inner">2100</div></td>
+						<td><div class="tile-inner">$800</div></td>
+					</tr>
+					<tr>
+						<td><div class="pull-left tile-side">
+							<div class="avatar avatar-red avatar-sm">
+								<span class="icon">♟</span>
+							</div>
+						</div>
+						<div class="tile-inner">
+							<span><strong>Mission</strong></span>
+						</div></td>
+						<td><div class="tile-inner">3rd</div></td>
+						<td><div class="tile-inner">1309204213</div></td>
+						<td><div class="tile-inner">310,000</div></td>
+						<td><div class="tile-inner">2500</div></td>
+						<td><div class="tile-inner">$800</div></td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+					</div>
+				</div>
 				{{{myStats}}}
 			</div>
 		</div>
@@ -80,14 +142,14 @@
 		
 		
 	</div>
-	<div class="card" style="max-width:300px;">
+	<div id="achievement" class="card" style="max-width:300px;position:absolute;top:100px;left:45%;display:none;">
 			<div class="card-main">
 				<div class="card-img">
-					<img alt="alt text" src="images/samples/landscape.jpg">
-					<p class="card-img-heading">You have saved a lot of water!</p>
+					<img id="achievementImage" alt="alt text" src="images/samples/landscape.jpg">
+					<p class="card-img-heading" id="achievementTitle">You have saved a lot of water!</p>
 				</div>
 				<div class="card-inner">
-					<p>
+					<p id='achievementDescription'>
 						Congratulations!<br>
 						Camels everywhere look up to you!
 					</p>
@@ -122,6 +184,7 @@
 	<script src="../js/navigation.js"></script>
 	<script src="../js/actions.js"></script>
 	<script src="../js/map.js"></script>
+	<script src="http://js.arcgis.com/3.14/"></script>
 	<script src="../js/myStats.js"></script>
 	<script src="../js/project.js"></script>
 </body>

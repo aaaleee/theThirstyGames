@@ -1,17 +1,9 @@
-var socket;
+
 var map;
-var sock;
-var sockUpdates;
-var info;
-var fullBinsChart;
-var iconBase = 'images/';
-var full = 0;
-var empty = 0;
-var binMarkers = [];
   
 $(document).ready(function() {
 
-	function initialize() {
+	/*function initialize() {
       var mapCanvas = document.getElementById('map');
       var mapOptions = {
         center: new google.maps.LatLng(53.342565, -6.259508),
@@ -22,5 +14,12 @@ $(document).ready(function() {
       map = new google.maps.Map(mapCanvas, mapOptions);
       info = new google.maps.InfoWindow();
 	}
-	google.maps.event.addDomListener(window, 'load', initialize);
+	google.maps.event.addDomListener(window, 'load', initialize);*/
+  require(["esri/map", "dojo/domReady!"], function(Map) { 
+    var map = new Map("map-container", {
+      center: [-122.5, 37.75],
+      zoom: 12,
+      basemap: "topo"
+    });
+  });
 });

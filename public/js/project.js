@@ -6,27 +6,25 @@ function parseFormElements(formId,elementNames) {
 	return parsedObject;
 }
 
+function showAchievement(achievementName,achievementText,achievementImage) {
+	//$('#achievementImage').attr('src',achievementImage);
+	if(achievementImage) {
+		$('#achievementImage').html(achievementText);	
+	}
+	$('#achievementDescription').html(achievementText);	
+	$('#achievementTitle').html(achievementName);
+	$('#achievement').show();
+}
+
 function showMeterModal() {
 	$("#modal-container").load("/meterReading", function() {
 
-		$("#saveMeterReadingButton").click(function() {
-			var baseAttributes = ["binId","lat","lng"];
-			var binObject = parseFormElements("binSettings",baseAttributes);
+		$("#saveMeterReadingButton").click(function() {	
+			$("#add-reading").modal("hide");
+			showAchievement('Check please!','Congrats!<br>You just submitted your first reading!<br><span class="content-sub-heading">+100xp</span>');
 
-			var settingsAttributes = ["readInterval","numberOfMeasurements","wakeUpTime","sleepTime","fullThreshold","halfFullThreshold"];
-			
-			binObject["settings"] = parseFormElements("binSettings",settingsAttributes);
-
-			$.post("/api/meterReadings", binObject, function(response) {
-				if(response.error) {
-					console.log("error "+response.error);
-				} else {
-					console.log("OK: "+response);
-					$("#add-reading").modal("hide");
-				}
-			});
-			
 		});
+			
 		$('.datepicker-adv-default').each(function(index) {
 		var datepicker = $(this).pickadate({
 			clear: 'Cancel',
@@ -97,5 +95,7 @@ function showMyStats(id) {
 $(function() {
 	loadNavigation("main");
 	loadActions("main");
-	
+	$('.progress-circular-wrapper').remove();
+	$('.progress-circular-inner').remove();
+	$('.progress-circular-spinner').remove();
 });
