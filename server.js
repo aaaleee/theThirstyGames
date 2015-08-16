@@ -28,6 +28,11 @@ app.get('/login', function(req, res) {
     servePage(req,res);
 });
 
+app.get('/achievements', function(req, res) {
+    req.body.file = "achievements.html";
+    servePage(req,res);
+});
+
 app.get('/meterReading', function(req, res) {
     req.body.file = "meterReading.html";
     servePage(req,res);
