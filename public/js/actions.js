@@ -3,7 +3,7 @@ var actions = {
 		label: "My Stats",
 		action: "showMyStats",
 		iconClass: "icon",
-		iconHTML: "",
+		iconHTML: "list",
 
 	}
 	],
@@ -18,7 +18,7 @@ var actions = {
 			label: "Submit Meter Reading",
 			action: "showMeterModal",
 			iconClass: "icon",
-			iconHTML: "settings",
+			iconHTML: "input",
 		},
 		{
 			label: "Update My Profile",
