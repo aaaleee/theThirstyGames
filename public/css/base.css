@@ -4119,7 +4119,7 @@ pre code {
   .card,
   .card-img,
   .card-side {
-    border-radius: 0 !important;
+    border-radius: 20px !important;
   }
 
   .card,
@@ -5231,6 +5231,8 @@ a.fbtn:focus, a.fbtn:hover {
   -webkit-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card[class*="-bg"] {
   color: #ffffff;
@@ -9129,5 +9131,22 @@ input[type="checkbox"]:checked + .switch-toggle-yellow:after, input[type="radio"
     padding-right: 16px;
     right: 240px;
   }
+}
+
+#badges {
+  float:left;
+
+}
+
+.badge {
+  padding-left: 20px;
+  float:left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#my-stats {
+  display: none;
 }
 

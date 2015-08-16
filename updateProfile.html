@@ -1,0 +1,36 @@
+<div aria-hidden="true" class="modal fade" id="add-reading" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-xs">
+		<div class="modal-content">
+			<div class="modal-heading">
+				<a class="modal-close" data-dismiss="modal">&times;</a>
+				<h2 class="modal-title">Update your data</h2>
+			</div>
+			<div class="modal-inner">
+				<span id="messages" style="display:none;"></span>
+				<form id="binSettings" name="binSettings" method="post" action="">
+					<table class="settings-modal">
+						<tr>
+							<td class="settings-modal-label">
+								<span>: </span>
+							</td>
+							<td class="settings-modal-value">
+								<input type="text" size="12" name="reading" value="" id="reading"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="settings-modal-label">
+								<span>Date: </span>
+							</td>
+							<td class="settings-modal-value">
+							<input class="datepicker-adv datepicker-adv-default form-control" id="datepicker-adv-2" type="text" value="8/16/2015" name="readingDate" id="readingDate">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button" id="readingCancelButton">Cancel</button><button class="btn btn-flat btn-alt" type="button" id="saveMeterReadingButton">Save</button></p>
+			</div>
+		</div>
+	</div>
+</div>

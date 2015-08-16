@@ -7,7 +7,7 @@
 	<title>The Thirsty Games</title>
 
 	<!-- css -->
-	<link href="../css/base.min.css" rel="stylesheet">
+	<link href="../css/base.css" rel="stylesheet">
 	<link href="../css/map.css" rel="stylesheet">
 
 	<!-- favicon -->
@@ -48,7 +48,7 @@
 		<ul class="nav nav-list pull-right">
 			<li>
 				<a data-toggle="menu" href="#profile">
-					<span class="access-hide">John Smith</span>
+					<span class="access-hide">John Doe</span>
 					<span><img class="logo avatar-sm" alt="alt text for John Smith avatar" src="images/logo.png"></span>
 				</a>
 			</li>
@@ -73,11 +73,32 @@
 		<div class="container">
 			<div class="row">
 				<div id="map"></div>
-				<div id="bin-list"></div>
 				{{{myStats}}}
 			</div>
 		</div>
     <div id='modal-container'></div>
+		<div class="card" style="max-width:300px;">
+			<div class="card-main">
+				<div class="card-img">
+					<img alt="alt text" src="images/samples/landscape.jpg">
+					<p class="card-img-heading">You have saved a lot of water!</p>
+				</div>
+				<div class="card-inner">
+					<p>
+						Congratulations!<br>
+						Camels everywhere look up to you!
+					</p>
+				</div>
+				<div class="card-action">
+					<ul class="nav nav-list pull-left">
+						<li>
+							<a href="javascript:void(0)" onclick="$('.card').hide();"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">OK</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+	</div>
 	</div>
 	<footer class="footer">
 		<div class="container">

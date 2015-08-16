@@ -35,15 +35,15 @@ function renderMyStats(userId) {
 	        ]
      	});
 
-	    $('#mostActiveDays').highcharts({
+	    /*$('#mostActiveMonths').highcharts({
 	        chart: {
 	            type: 'column'
 	        },
 	        title: {
-	            text: 'Most Active Days'
+	            text: 'Usage by month'
 	        },
 	        xAxis: {
-	            categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+	            categories: ['January','February','March','April','May','June','July','August']
 	        },
 	        yAxis: {
 	            title: {
@@ -51,13 +51,13 @@ function renderMyStats(userId) {
 	            }
 	        },
 	        series: [{
-	            name: 'Daily Max',
+	            name: 'Gallons',
 	            data: [12,10,10,13,16,30,32]//{{dailyMaxReadings}}
 	        }
 	        ]
 	    });
 
-	    /*$('#timeFull').highcharts({
+	    $('#timeFull').highcharts({
 	        chart: {
 	            type: 'pie'
 	        },
